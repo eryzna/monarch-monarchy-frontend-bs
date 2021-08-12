@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Monarch Monarchy</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico"/>
+    <meta name="description" content="Monarch Sighting Tracking Application">
+    <meta name="author" content="Elana R.">
+
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+    <!-- JavaScript file. -->
+    
+    <div class="left-split left">
+      <div class="centered-left-top">
+        <img src="assets/Crown_test.png" alt="crown" class="crown-image">
+      </div>
+        <div class="centered-left">
+          <div id= "filter-sightings" name="filter-sightings">
+            <h2>Search</h2>
+            <label> Select Year: </label><select id="year" name="year-dropdown">
+                <option value=""></option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+            </select>
+            <br> </br>
+            <label>City: </label><input id="city" type="text" name="search" placeholder="Enter city">
+            <br></br>
+            <label>State: </label><select id="state" name="state-dropdown">
+            </select>
+            <br></br>
+            <button id="filter" name="filter">Search</button>
+            <br></br>
+            <button id="clear-params" name="clear-params"> Clear Params</button>
+            <br></br>
+            <h2>My Sightings</h2>
+            <button id="record-sighting-button" name="record-sighting-button"> Record a Sighting</button>
+            <br></br>
+            </div>
+            <div id="record-sighting" name="record-sighting">
+              <div id="record-sighting-form">
+                
+              </div>
+            </div>
+            <div id="username-input" name="username-input"></div>
+            <button id="my-sightings-button">My Sightings</button>
+
+        </div>
+        <div class="centered-left-bottom" id="centered-left-bottom"> </div>
+      </div>
+      
+      <div class="right-split right">
+        <img class = "background-img" src="assets/Monarch test.jpg" alt="Monarch">
+        <div class ="sightings-container">
+          <ul id="sighting-info" style="text-align: left">
+          </ul>
+        </div>
+        <div id= "sightings-grid">
+        </div>
+        <div class="centered-right">
+         
+          
+          <div class="app-info" id= "app-info">
+            <h1>Welcome to Monarch Monarchy!</h1>
+            <p>Please select your search parameters, record your own sighting, or view your sighting records.</p>
+          </div>
+        </div>
+        <footer class="footer">
+          <a href="https://journeynorth.org/sightings/">
+            <img class="footer-img" src="assets/journey_north_logo.png" alt="Journey North logo">
+          </a>        
+        </footer>
+      </div>
+
+      
+      
+  </body>
+  <script src="index.js"></script>
+
+</html>
